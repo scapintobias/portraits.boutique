@@ -1,103 +1,89 @@
 import React from 'react';
-import { Header, Main } from '../components/components';
+import { Main, Five7, Seven5, Hor, Vert } from '../components/components';
 
-const Br = () => <br></br>;
+const Br = () => (
+	<span>
+		<br></br>
+		<br></br>
+	</span>
+);
 
 export const Info = () => (
 	<main>
-
 		<Main>
-			<section className="white flex db w-100 flex-column-m optima f3 lh-copy pb7 mb3 bb">
-				<div className="w-50 w-100-m mb5">
-					<p>Ma in realtà.</p>
-					<p className="mb3">In parole povere.</p>
-					<p className="mb3">Tu. Cosa fai?</p>
+			<section className="white bb flex justify-between db w-100 flex-column-m pb4 mb4">
+				<div className="w-40 w-100-m optima f3 lh-copy mr3">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at massa
+					hendrerit, porta est sit amet, pulvinar odio. Donec nec tortor varius,
+					malesuada lorem ut, elementum felis. Donec tellus urna, bibendum eu massa
+					id, auctor rutrum nulla. Sed id urna eu libero cursus commodo semper quis
+					nulla. Maecenas vestibulum, ipsum laoreet feugiat volutpat, odio lorem
+					sodales ante, ut congue risus mauris quis diam. Quisque ultrices enim vitae
+					ligula interdum accumsan. Vestibulum suscipit finibus leo, sit amet
+					malesuada diam iaculis a. Quisque eget ornare lorem, eu ultrices libero.
+					<Br />
+					Mauris lorem diam, vulputate quis rutrum sed, lobortis vel ipsum.
+					Pellentesque tellus lorem, accumsan in pretium id, dictum eu massa. Nulla
+					diam orci, bibendum vel posuere in, tempor ut mi. Integer venenatis posuere
+					nisi, ac consequat ipsum consequat at. Donec et hendrerit elit, et
+					consectetur odio. Aenean quis est non nibh ultrices maximus a pellentesque
+					nisl. Ut fermentum diam eget enim fermentum, nec rhoncus ipsum lobortis.
+					Aliquam id ex turpis. In enim quam, maximus non tortor non, dictum ultrices
+					est. Integer volutpat volutpat magna. Suspendisse potenti. Nulla at ex
+					tortor. Duis lacus arcu, interdum quis auctor sit amet, mattis et dolor.
+					<Br />
+					Aliquam augue nisi, consectetur eu dui nec, maximus facilisis orci.
+					Curabitur scelerisque nibh ac est ornare, eu mollis magna lacinia. Nam
+					porta ultricies eros, laoreet tempus justo laoreet sed. Aliquam vitae magna
+					lorem. Aenean sed nisi sed neque vehicula finibus. Mauris posuere tempus
+					egestas. Quisque vitae erat eleifend, efficitur tellus eu, varius justo.
+					Aenean condimentum nisl eget augue molestie, quis dictum erat accumsan. Ut
+					sem nisi, vehicula id pharetra sed, posuere vel velit. Aenean non mauris
+					lacus. In ipsum ante, tempus ac ligula et, finibus eleifend lectus.
 				</div>
 				<div className="w-50 w-100-m">
-					<p>Grafica e Fotografia</p>
-					<p className="mb3">Entrambe sia analogiche che digitali</p>
-					<p className="mb3">
-						Mi posso occupare del vostro logo, del vostro catalogo, del vostro sito —
-						sia che abbiate un bar in centro a Milano, o una cantina nel Veneto
-						Orientale.
-					</p>
-					<p>
-						Posso scattarvi delle foto, che siano di prodotto, ritratti e sì, persino
-						al vostro matrimonio!
-					</p>
-					<p className="mt3">Qual è la conseguenza?</p>
-					<p className="mb5">Tutto mantiene una qualità costante.</p>
-					<p className="orange">Ma quanto costa?</p>
-					<p className="mt3">Dipende solo da voi, in base a cosa cercate. </p>
-					<p className="mt3">
-						Sia una{' '}
-						<a
-							href="https://www.alvolante.it/listino_auto/fiat-panda"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="dib link white hover-blue underline"
-						>
-							Panda
-						</a>{' '}
-						che una{' '}
-						<a
-							href="https://www.alvolante.it/listino_auto/lamborghini-aventador"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="dib link white hover-gold underline"
-						>
-							Lamborghini
-						</a>{' '}
-						hanno quattro ruote. Forse l'unica cosa in comune.
-					</p>
+					<Five7 container="w-100" background={Vert} desc="dn" />
 				</div>
 			</section>
-			<section className="flex flex-column-m justify-between pb7 mb2 bb">
-				<div className="w-40 w-100-m mr0-m mb5 h7 mr2 overflow-hidden">
-					<img src="./img/02.png" alt="ritratto" className="obj-card" />
+			<section className="flex w-100 flex-column-m  pb3 mb2 bb">
+				<div className="flex w-50 w-100-m flex-column">
+					<Seven5
+						container="w-100 mb4"
+						background={Hor}
+						desc="dn"
+					/>
+					<Seven5 container="w-100" background={Hor} desc="dn" />
 				</div>
-				<div className="optima w-50 w-100-m ml2 lh-copy fw4 f3 white">
-					La scelta di questa professione non è stata casuale. Non saprei proprio
-					dire quando esattamente sia successo.
+				<div className="optima w-40 self-start w-100-m ph4 lh-copy fw4 f3 white">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at massa
+					hendrerit, porta est sit amet, pulvinar odio. Donec nec tortor varius,
+					malesuada lorem ut, elementum felis. Donec tellus urna, bibendum eu massa
+					id, auctor rutrum nulla. Sed id urna eu libero cursus commodo semper quis
+					nulla. Maecenas vestibulum, ipsum laoreet feugiat volutpat, odio lorem
+					sodales ante, ut congue risus mauris quis diam. Quisque ultrices enim vitae
+					ligula interdum accumsan. Vestibulum suscipit finibus leo, sit amet
+					malesuada diam iaculis a. Quisque eget ornare lorem, eu ultrices libero.
 					<Br />
+					Mauris lorem diam, vulputate quis rutrum sed, lobortis vel ipsum.
+					Pellentesque tellus lorem, accumsan in pretium id, dictum eu massa. Nulla
+					diam orci, bibendum vel posuere in, tempor ut mi. Integer venenatis posuere
+					nisi, ac consequat ipsum consequat at. Donec et hendrerit elit, et
+					consectetur odio. Aenean quis est non nibh ultrices maximus a pellentesque
+					nisl. Ut fermentum diam eget enim fermentum, nec rhoncus ipsum lobortis.
+					Aliquam id ex turpis. In enim quam, maximus non tortor non, dictum ultrices
+					est. Integer volutpat volutpat magna. Suspendisse potenti. Nulla at ex
+					tortor. Duis lacus arcu, interdum quis auctor sit amet, mattis et dolor.
 					<Br />
-					Ho preso la prima reflex in mano ormai quasi vent'anni fa, e ancora mi
-					riserva molte soddisfazioni, nonostante non senta più l'odore dello
-					sviluppo, o il rumore del tappo di un nuovo rullino. Credo si noti dai miei
-					lavori.
-					<Br />
-					<Br />
-					Stessa cosa vale per la matita, compagna instancabile, nonostante ora tutti
-					corrano una gara di velocità, a cui non mi sento di appartenere.
-					<Br />
-					<Br />
-					Se cercate prodotti digitali o non, con una qualità, una cura, e una
-					consapevolezza quasi artigianale, per cui mezzo secolo fa siamo diventati
-					famosi in tutto il mondo, siete nel posto giusto.
-					<Br />
-					<Br />
-					<div className="pt5 measure f4 f5-m fw4">
-						Laurea Triennale in Design della Comunicazione
-						<Br />
-						Laurea Magistrale in Design della Comunicazione
-						<Br />
-						<span className="fw6 ttu">politecnico di milano</span>
-					</div>
+					Aliquam augue nisi, consectetur eu dui nec, maximus facilisis orci.
+					Curabitur scelerisque nibh ac est ornare, eu mollis magna lacinia. Nam
+					porta ultricies eros, laoreet tempus justo laoreet sed. Aliquam vitae magna
+					lorem. Aenean sed nisi sed neque vehicula finibus. Mauris posuere tempus
+					egestas. Quisque vitae erat eleifend, efficitur tellus eu, varius justo.
+					Aenean condimentum nisl eget augue molestie, quis dictum erat accumsan. Ut
+					sem nisi, vehicula id pharetra sed, posuere vel velit. Aenean non mauris
+					lacus. In ipsum ante, tempus ac ligula et, finibus eleifend lectus.
 				</div>
 			</section>
-			<div className="mb6 optima measure lh-copy f3 white">
-				<p className="fw5 ttu pb4">Contatti</p>
-				<a
-					href="mailto:info@scapintobias.xyz?subject=Primo contatto"
-					className="link hover-gold white blink b pb3"
-				>
-					Mail
-				</a>
-
-				<a href="tel:+393402100166" className="link hover-gold white">
-					+39 340 210 0166
-				</a>
-			</div>
 		</Main>
 	</main>
 );

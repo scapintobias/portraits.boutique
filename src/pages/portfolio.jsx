@@ -1,41 +1,39 @@
 import React from 'react';
 import {
-	Header,
 	Main,
-	Place,
-	Five7,
-	Seven5,
-	Flex,
 	FlexE,
 	FlexS,
+	Five7L,
+	Seven5L,
+	Vert,
+	Hor,
 } from '../components/components';
-import { NavLink } from 'react-router-dom';
 
 export const Portfolio = () => (
 	<main>
 		<Main>
 			<FlexE>
-				<Five7
-					to="/progetti/yape"
+				<Five7L
+					to="/portfolio/mia"
 					container="w-40 w-100-m mb5"
 					article="dim"
-					background="./img/nasa.jpg"
-					title="Un nuovo volto ad un drone"
-					group="immagine coordinata"
-					anno="2018"
+					background={Vert}
+					title="Valeria"
+					group="milan"
+					anno="2015"
 					desc="db"
 				/>
 			</FlexE>
 			<FlexS>
-				<Seven5
-					to="/progetti/yape"
+				<Seven5L
+					to="/portfolio/nicola"
 					container="w-80 w-100-m"
 					article="dim"
-					background="./img/nasa.jpg"
-					title="Un nuovo volto ad un drone"
-					group="immagine coordinata"
+					background={Hor}
+					title="Nicola"
+					group="milan"
 					anno="2018"
-					desc="dn"
+					desc="db"
 				/>
 			</FlexS>
 		</Main>

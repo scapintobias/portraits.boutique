@@ -1,13 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { IgW, Main, Img, Flex, Header } from '../components/components';
 
 export const Home = () => (
 	<main>
-
 		<div className="overlay z-2" />
 		<img
-			src="./img/nasa.jpg"
+			src="https://source.unsplash.com/1920x1080/?portrait,male,dark"
 			alt="home"
 			className=" overflow-hidden obj-cover border-box z-10"
 		/>

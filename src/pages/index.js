@@ -1,4 +1,4 @@
 export * from './home';
 export { Portfolio } from './portfolio';
 export * from './info';
-export { Yape } from './projects.jsx';
+export { Mia, Nicola } from './projects.jsx';

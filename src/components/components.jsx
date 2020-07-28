@@ -6,17 +6,23 @@ export const Header = () => (
 	<header className="absolute z-max mt3 mt2-m ph2-m ph3  w-100 flex justify-between">
 		<NavLink
 			to="/"
-			className="flex flex-column-m optima tracked white fw5 f-4 f3-m ttu"
+			className="flex flex-column-m optima tracked near-white dim fw5 f-4 f3-m ttu"
 		>
 			<p className="pr2">Portrait</p>
 			<p>boutique</p>
 		</NavLink>
-		<div className="flex items-end-m flex-column-m optima white f3 fw3 h2">
+		<div className="flex items-end-m flex-column-m optima near-white f3 fw3 h2">
 			<div className="flex items-end-m pb2-m flex-column-m ">
-				<NavLink to="/progetti" className="ttu link white hover-gold pr3 pr0-m">
+				<NavLink
+					to="/portfolio"
+					className="ttu link white hover-fire-opal  pr3 pr0-m"
+				>
 					portfolio
 				</NavLink>
-				<NavLink to="/info" className="link white hover-gold pr3 pr0-m pb2-m">
+				<NavLink
+					to="/info"
+					className="link near-white hover-fire-opal  pr3 pr0-m pb2-m"
+				>
 					INFO
 				</NavLink>
 				<IgW />
@@ -26,7 +32,7 @@ export const Header = () => (
 );
 
 export const Main = ({ children }) => (
-	<section className="w-100 overflow-hidden ph3 ph2-m center mv6">
+	<section className="w-100 overflow-hidden ph3 ph2-m center mt6 mb4">
 		{children}
 	</section>
 );
@@ -49,6 +55,48 @@ export const FlexS = (props) => (
 	<section className="flex w-100 justify-start">{props.children}</section>
 );
 export const Five7 = (props) => (
+	<section className={props.container}>
+		<article className={props.article}>
+			<div className="aspect-ratio aspect-ratio--5x7">
+				<div
+					className="aspect-ratio--object cover"
+					style={{
+						background: `url(${props.background}) no-repeat top center`,
+					}}
+				/>
+			</div>
+		</article>
+		<div className={CN(' mt3', props.desc)}>
+			<p className="optima f3 white fw5 pb2">{props.title}</p>
+			<p className="optima f6 silver fw4 ttu">
+				{props.group} - {props.anno}
+			</p>
+		</div>
+	</section>
+);
+
+export const Seven5 = (props) => (
+	<section className={props.container}>
+		<article className={props.article}>
+			<div className="aspect-ratio aspect-ratio--7x5">
+				<div
+					className="aspect-ratio--object cover"
+					style={{
+						background: `url(${props.background}) no-repeat top center`,
+					}}
+				/>
+			</div>
+		</article>
+		<div className={CN('mt3', props.desc)}>
+			<p className="optima f3 white fw5 pb2">{props.title}</p>
+			<p className="optima f6 silver fw4 ttu">
+				{props.group} - {props.anno}
+			</p>
+		</div>
+	</section>
+);
+
+export const Five7L = (props) => (
 	<NavLink to={props.to} className={props.container}>
 		<article className={props.article}>
 			<div className="aspect-ratio aspect-ratio--5x7">
@@ -69,7 +117,7 @@ export const Five7 = (props) => (
 	</NavLink>
 );
 
-export const Seven5 = (props) => (
+export const Seven5L = (props) => (
 	<NavLink to={props.to} className={props.container}>
 		<article className={props.article}>
 			<div className="aspect-ratio aspect-ratio--7x5">
@@ -114,3 +162,6 @@ S8.3,6.8,10,6.8c1.7,0,3.2,1.4,3.2,3.2C13.2,11.7,11.7,13.2,10,13.2z"
 		</svg>
 	</a>
 );
+
+export var Hor = 'https://source.unsplash.com/1700x1200/?portrait';
+export var Vert = 'https://source.unsplash.com/1200x1700/?portrait';
