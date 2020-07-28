@@ -6,8 +6,7 @@ import './type.css';
 import './index.css';
 
 import { Home, Portfolio, Info, Yape } from './pages';
-
-import { Footer } from './pages/components/components';
+import { Header } from './components/components';
 
 function useRouter() {
 	return useContext(__RouterContext);
@@ -40,11 +39,11 @@ export default function App() {
 	return (
 		<Router>
 			<ScrollToTop>
+				<Header />
 				<div style={{ overflow: 'hidden' }}>
 					<PageContent />
 				</div>
 			</ScrollToTop>
-			<Footer />
 		</Router>
 	);
 }

@@ -1,14 +1,13 @@
 import React from 'react';
-import { InfoHead } from './components/header';
-import { Main } from './components/components';
+import { Header, Main } from '../components/components';
 
 const Br = () => <br></br>;
 
 export const Info = () => (
 	<main>
-		<InfoHead />
+
 		<Main>
-			<section className="flex db w-100 flex-column-m optima f3 lh-copy pb7 mb3 bb">
+			<section className="white flex db w-100 flex-column-m optima f3 lh-copy pb7 mb3 bb">
 				<div className="w-50 w-100-m mb5">
 					<p>Ma in realtà.</p>
 					<p className="mb3">In parole povere.</p>
@@ -36,7 +35,7 @@ export const Info = () => (
 							href="https://www.alvolante.it/listino_auto/fiat-panda"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="dib link black hover-blue underline"
+							className="dib link white hover-blue underline"
 						>
 							Panda
 						</a>{' '}
@@ -45,7 +44,7 @@ export const Info = () => (
 							href="https://www.alvolante.it/listino_auto/lamborghini-aventador"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="dib link black hover-gold underline"
+							className="dib link white hover-gold underline"
 						>
 							Lamborghini
 						</a>{' '}
@@ -57,7 +56,7 @@ export const Info = () => (
 				<div className="w-40 w-100-m mr0-m mb5 h7 mr2 overflow-hidden">
 					<img src="./img/02.png" alt="ritratto" className="obj-card" />
 				</div>
-				<div className="optima w-50 w-100-m ml2 lh-copy fw4 f3 black">
+				<div className="optima w-50 w-100-m ml2 lh-copy fw4 f3 white">
 					La scelta di questa professione non è stata casuale. Non saprei proprio
 					dire quando esattamente sia successo.
 					<Br />
@@ -86,16 +85,16 @@ export const Info = () => (
 					</div>
 				</div>
 			</section>
-			<div className="mb6 optima measure lh-copy f3 black">
+			<div className="mb6 optima measure lh-copy f3 white">
 				<p className="fw5 ttu pb4">Contatti</p>
 				<a
 					href="mailto:info@scapintobias.xyz?subject=Primo contatto"
-					className="link hover-gold black blink b pb3"
+					className="link hover-gold white blink b pb3"
 				>
 					Mail
 				</a>
 
-				<a href="tel:+393402100166" className="link hover-gold black">
+				<a href="tel:+393402100166" className="link hover-gold white">
 					+39 340 210 0166
 				</a>
 			</div>
