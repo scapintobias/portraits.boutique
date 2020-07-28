@@ -6,7 +6,7 @@ export const Header = () => (
 	<header className="absolute z-max mt3 mt2-m ph2-m ph3  w-100 flex justify-between">
 		<NavLink
 			to="/"
-			className="flex flex-column-m optima tracked near-white dim fw5 f-4 f3-m ttu"
+			className="flex flex-column-m optima tracked near-white fw5 f-4 f3-m ttu"
 		>
 			<p className="pr2">Portrait</p>
 			<p>boutique</p>
