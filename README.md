@@ -1,2 +1,1 @@
-# portraits.boutique
-Photography
+New endeavours
