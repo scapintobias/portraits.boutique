@@ -7,6 +7,7 @@ import './index.css';
 
 import { Home, Portfolio, Info, Mia, Nicola } from './pages';
 import { Header } from './components/components';
+import { Francesco } from './pages/projects';
 
 function useRouter() {
 	return useContext(__RouterContext);
@@ -31,6 +32,7 @@ function PageContent() {
 			<Route path="/portfolio" exact component={Portfolio} />
 			<Route path="/portfolio/mia" exact component={Mia} />
 			<Route path="/portfolio/nicola" exact component={Nicola} />
+			<Route path="/portfolio/francesco" exact component={Francesco} />
 			<Route path="/info" exact component={Info} />
 		</Switch>
 	);

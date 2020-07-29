@@ -5,34 +5,41 @@ import {
 	FlexS,
 	Five7L,
 	Seven5L,
+	Seven5,
 	Vert,
 	Hor,
+	FlexC,
+	Five7,
 } from '../components/components';
 
 export const Portfolio = () => (
 	<main>
 		<Main>
+			<FlexC>
+				<Seven5
+					container="w-80 w-100-m mb6"
+					background="./img/012.jpg"
+					title="Alice"
+					desc="db"
+				/>
+			</FlexC>
 			<FlexE>
 				<Five7L
 					to="/portfolio/mia"
-					container="w-40 w-100-m mb5"
-					article="dim"
-					background={Vert}
+					container="w-40 w-100-m mb5 "
+					article="dimm"
+					background="./img/013.jpg"
 					title="Valeria"
-					group="milan"
-					anno="2015"
 					desc="db"
 				/>
 			</FlexE>
 			<FlexS>
-				<Seven5L
-					to="/portfolio/nicola"
-					container="w-80 w-100-m"
-					article="dim"
-					background={Hor}
-					title="Nicola"
-					group="milan"
-					anno="2018"
+				<Five7L
+					to="/portfolio/francesco"
+					container="w-70 w-100-m"
+					article="dimm"
+					background="./img/020.jpg"
+					title="Francesco"
 					desc="db"
 				/>
 			</FlexS>
