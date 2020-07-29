@@ -1,12 +1,15 @@
 import React from 'react';
+import { Slider } from '../components/components';
 
 export const Home = () => (
 	<main>
-		<div className="overlay z-2" />
-		<img
-			src="https://source.unsplash.com/1920x1080/?portrait,male,dark"
-			alt="home"
-			className=" overflow-hidden obj-cover border-box z-10"
-		/>
+		<div className="overlay z-2"></div>
+		<Slider></Slider>
 	</main>
 );
+
+// <img
+// 			src="./img/012.jpg"
+// 			alt="home"
+// 			className=" overflow-hidden obj-cover border-box z-1"
+// 		/>

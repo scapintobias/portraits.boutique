@@ -1,6 +1,28 @@
 import React from 'react';
 import CN from 'classnames';
 import { NavLink } from 'react-router-dom';
+import AwesomeSlider from 'react-awesome-slider';
+import withAutoplay from 'react-awesome-slider/dist/autoplay';
+import 'react-awesome-slider/dist/styles.css';
+import ReactCompareImage from 'react-compare-image';
+export var Hor = 'https://source.unsplash.com/700x500/?portrait,woman';
+export var HorM = 'https://source.unsplash.com/700x500/?portrait,man';
+export var Vert = 'https://source.unsplash.com/500x700/?portrait';
+
+const AutoplaySlider = withAutoplay(AwesomeSlider);
+
+export const Slider = () => (
+	<AutoplaySlider
+		play={true}
+		organicArrows={false}
+		cancelOnInteraction={false} // should stop playing on user interaction
+		interval={3000}
+		className=" obj-cover border-box z-1"
+	>
+		<div data-src="./img/012.jpg" />
+		<div data-src="./img/013.png" />
+	</AutoplaySlider>
+);
 
 export const Header = () => (
 	<header className="absolute z-max mt3 mt2-m ph2-m ph3  w-100 flex justify-between">
@@ -8,7 +30,7 @@ export const Header = () => (
 			to="/"
 			className="flex flex-column-m optima tracked near-white fw5 f2 f3-m ttu"
 		>
-			<p className="pr2">Portrait</p>
+			<p className="pr2">Portraits</p>
 			<p>boutique</p>
 		</NavLink>
 		<div className="flex items-end-m flex-column-m optima near-white f3 fw3 h2">
@@ -138,6 +160,12 @@ export const Seven5L = (props) => (
 	</NavLink>
 );
 
+export const VertC = (props) => (
+	<section className={props.container}>
+		<ReactCompareImage leftImage={props.left} rightImage={props.right} />
+	</section>
+);
+
 export const IgW = () => (
 	<a
 		href="https://www.instagram.com/portrait.boutique"
@@ -162,6 +190,3 @@ S8.3,6.8,10,6.8c1.7,0,3.2,1.4,3.2,3.2C13.2,11.7,11.7,13.2,10,13.2z"
 		</svg>
 	</a>
 );
-
-export var Hor = 'https://source.unsplash.com/1700x1200/?portrait';
-export var Vert = 'https://source.unsplash.com/1200x1700/?portrait';

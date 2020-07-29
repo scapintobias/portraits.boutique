@@ -30,7 +30,7 @@ function PageContent() {
 			<Route path="/" exact component={Home} />
 			<Route path="/portfolio" exact component={Portfolio} />
 			<Route path="/portfolio/mia" exact component={Mia} />
-			<Route path="/portfolio/mia" exact component={Nicola} />
+			<Route path="/portfolio/nicola" exact component={Nicola} />
 			<Route path="/info" exact component={Info} />
 		</Switch>
 	);
