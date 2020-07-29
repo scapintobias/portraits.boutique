@@ -6,7 +6,7 @@ import {
 	Hor,
 	Vert,
 	HorM,
-	VertC,
+	Compare,
 } from '../components/components';
 
 export const Mia = () => (
@@ -18,6 +18,6 @@ export const Mia = () => (
 
 export const Nicola = () => (
 	<Main>
-		<VertC container="flex w-80 center" left="../img/012.jpg" right={HorM} />
+		<Compare container="flex w-80 center" left="../img/012.jpg" right={HorM} />
 	</Main>
 );

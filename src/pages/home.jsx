@@ -4,7 +4,10 @@ import { Slider } from '../components/components';
 export const Home = () => (
 	<main>
 		<div className="overlay z-2"></div>
-		<Slider></Slider>
+		<Slider>
+			<div data-src="./img/012.jpg" />
+			<div data-src="./img/013.png" />
+		</Slider>
 	</main>
 );
 

@@ -11,7 +11,7 @@ export var Vert = 'https://source.unsplash.com/500x700/?portrait';
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
-export const Slider = () => (
+export const Slider = ({ children }) => (
 	<AutoplaySlider
 		play={true}
 		organicArrows={false}
@@ -19,8 +19,7 @@ export const Slider = () => (
 		interval={3000}
 		className=" obj-cover border-box z-1"
 	>
-		<div data-src="./img/012.jpg" />
-		<div data-src="./img/013.png" />
+		{children}
 	</AutoplaySlider>
 );
 
@@ -160,7 +159,7 @@ export const Seven5L = (props) => (
 	</NavLink>
 );
 
-export const VertC = (props) => (
+export const Compare = (props) => (
 	<section className={props.container}>
 		<ReactCompareImage leftImage={props.left} rightImage={props.right} />
 	</section>
