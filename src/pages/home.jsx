@@ -8,9 +8,11 @@ export const Home = () => (
 			<div data-src="./img/012.jpg" />
 			<div data-src="./img/013.jpg" />
 			<div data-src="./img/020.jpg" />
+			<div data-src="./img/025.jpg" />
 			<div data-src="./img/014.jpg" />
 			<div data-src="./img/018.jpg" />
 			<div data-src="./img/015.jpg" />
+			<div data-src="./img/022.jpg" />
 		</Slider>
 	</main>
 );
