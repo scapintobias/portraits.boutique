@@ -1,27 +1,10 @@
 import React from 'react';
 import CN from 'classnames';
 import { NavLink } from 'react-router-dom';
-import AwesomeSlider from 'react-awesome-slider';
-import withAutoplay from 'react-awesome-slider/dist/autoplay';
-import 'react-awesome-slider/dist/styles.css';
 import ReactCompareImage from 'react-compare-image';
 export var Hor = 'https://source.unsplash.com/700x500/?portrait,woman';
 export var HorM = 'https://source.unsplash.com/700x500/?portrait,man';
 export var Vert = 'https://source.unsplash.com/500x700/?portrait';
-
-const AutoplaySlider = withAutoplay(AwesomeSlider);
-
-export const Slider = ({ children }) => (
-	<AutoplaySlider
-		play={true}
-		organicArrows={false}
-		cancelOnInteraction={false} // should stop playing on user interaction
-		interval={3000}
-		className=" obj-cover border-box z-1"
-	>
-		{children}
-	</AutoplaySlider>
-);
 
 export const Header = () => (
 	<header className="absolute z-max mt3 mt2-m ph2-m ph3  w-100 flex justify-between">
@@ -79,6 +62,12 @@ export const Img = (props) => (
 	<div className={props.class}>
 		<img src={props.src} alt="img" className="whale" />
 		{props.children}
+	</div>
+);
+
+export const Im = (props) => (
+	<div>
+		<img src={props.src} alt="img" className="slider" />
 	</div>
 );
 
