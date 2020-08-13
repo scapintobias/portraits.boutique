@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Main } from '../components/components';
 
-
 class Switch extends Component {
 	constructor(props) {
 		super(props);
