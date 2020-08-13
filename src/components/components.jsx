@@ -1,16 +1,15 @@
 import React from 'react';
-import CN from 'classnames';
 import { NavLink } from 'react-router-dom';
-import ReactCompareImage from 'react-compare-image';
+
 export var Hor = 'https://source.unsplash.com/700x500/?portrait,woman';
 export var HorM = 'https://source.unsplash.com/700x500/?portrait,man';
 export var Vert = 'https://source.unsplash.com/500x700/?portrait';
 
 export const Header = () => (
-	<header className="absolute z-max mt3 mt2-m ph2-m ph3  w-100 flex justify-between">
+	<header className="absolute z-3 mt3 mt2-m ph2-m ph3  w-100 flex justify-between">
 		<NavLink
 			to="/"
-			className="flex flex-column-m optima tracked near-white fw5 f2 f3-m ttu"
+			className="flex flex-column-m optima tracked near-white fw5 f3 ttu"
 		>
 			<p className="pr2">Portraits</p>
 			<p>boutique</p>
@@ -41,23 +40,6 @@ export const Main = ({ children }) => (
 	</section>
 );
 
-export const ProH = (props) => (
-	<section className="near-white bt optima mb7 mb4-m flex w-100 justify-between">
-		<div className="f1 fw5 tracked-tight">{props.title}</div>
-		<div className="f5 silver ttu pt2">{props.subtitle}</div>
-	</section>
-);
-
-export const Pro = (props) => (
-	<section>
-		<div>{props.children}</div>
-		<section className="absolute near-white optima  bottom-0 mb3">
-			<div className="f1 fw5 tracked-tight">{props.title}</div>
-			<div className="f5 silver ttu ">{props.subtitle}</div>
-		</section>
-	</section>
-);
-
 export const Img = (props) => (
 	<div className={props.class}>
 		<img src={props.src} alt="img" className="whale" />
@@ -65,116 +47,34 @@ export const Img = (props) => (
 	</div>
 );
 
-export const Im = (props) => (
-	<div>
-		<img src={props.src} alt="img" className="slider" />
+export const Rov = (props) => (
+	<div className="flex w-100 justify-between pb3">
+		<div className="w-33 pr2 dim link">
+			<img src={props.one} alt="img" className="whale" />
+		</div>
+		<div className="w-34 pl2 pr2 dim link">
+			<img src={props.two} alt="img" className="whale" />
+		</div>
+		<div className="w-33 pl2 dim link">
+			<img src={props.three} alt="img" className="whale" />
+		</div>
 	</div>
 );
-
-export const Flex = (props) => (
-	<section className={CN('flex w-100', props.class)}>{props.children}</section>
-);
-
-export const FlexE = (props) => (
-	<section className="flex w-100 justify-end">{props.children}</section>
-);
-export const FlexS = (props) => (
-	<section className="flex w-100 justify-start">{props.children}</section>
-);
-
-export const FlexC = (props) => (
-	<section className="flex w-100 justify-center">{props.children}</section>
-);
-
-export const Five7 = (props) => (
-	<section className={props.container}>
-		<article className={props.article}>
-			<div className="aspect-ratio aspect-ratio--5x7">
-				<div
-					className="aspect-ratio--object cover"
-					style={{
-						background: `url(${props.background}) no-repeat top center`,
-					}}
-				/>
-			</div>
-		</article>
-		<div className={CN('mt2 optima', props.desc)}>
-			<div className="f27 near-white fw5">{props.title}</div>
+export const Roh = (props) => (
+	<div className="flex w-100 justify-between pb3">
+		<div className="w-50 pr2 dim link">
+			<img src={props.one} alt="img" className="whale" />
 		</div>
-	</section>
-);
 
-export const Seven5 = (props) => (
-	<section className={props.container}>
-		<article className={props.article}>
-			<div className="aspect-ratio aspect-ratio--7x5">
-				<div
-					className="aspect-ratio--object cover"
-					style={{
-						background: `url(${props.background}) no-repeat top center`,
-					}}
-				/>
-			</div>
-		</article>
-		<div className={CN('mt2 optima', props.desc)}>
-			<div className="f27 near-white fw5">{props.title}</div>
+		<div className="w-50 pl2 dim link">
+			<img src={props.two} alt="img" className="whale" />
 		</div>
-	</section>
-);
-
-export const Five7L = (props) => (
-	<NavLink to={props.to} className={props.container}>
-		<div className="ba b--white-10 bw bw4">
-			<article className={props.article}>
-				<div className="aspect-ratio aspect-ratio--5x7">
-					<div
-						className="aspect-ratio--object cover"
-						style={{
-							background: `url(${props.background}) no-repeat top center`,
-						}}
-					/>
-				</div>
-			</article>
-		</div>
-		<div className={CN('mt2 optima ', props.desc)}>
-			<div className="f27 near-white fw5">{props.title}</div>
-		</div>
-	</NavLink>
-);
-
-export const Seven5L = (props) => (
-	<NavLink to={props.to} className={props.container}>
-		<div className="ba b--white-10 bw bw4">
-			<article className={props.article}>
-				<div className="aspect-ratio aspect-ratio--7x5">
-					<div
-						className="aspect-ratio--object cover"
-						style={{
-							background: `url(${props.background}) no-repeat top center`,
-						}}
-					/>
-				</div>
-			</article>
-		</div>
-		<div className={CN('mt2 optima', props.desc)}>
-			<div className="f27 near-white fw5">{props.title}</div>
-		</div>
-	</NavLink>
-);
-
-export const Compare = (props) => (
-	<section className={props.container}>
-		<ReactCompareImage
-			leftImage={props.left}
-			rightImage={props.right}
-			sliderPositionPercentage={props.slider}
-		/>
-	</section>
+	</div>
 );
 
 export const IgW = () => (
 	<a
-		href="https://www.instagram.com/portrait.boutique"
+		href="https://www.instagram.com/portraits.boutique"
 		target="_blank"
 		rel="noopener noreferrer"
 		className="dib"

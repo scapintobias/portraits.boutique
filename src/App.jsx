@@ -1,13 +1,12 @@
 import React, { useEffect, useContext } from 'react';
 import { __RouterContext } from 'react-router';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+import SimpleReactLightbox from 'simple-react-lightbox';
 import './type.css';
 import './index.css';
 
-import { Home, Portfolio, Info, Mia, Nicola } from './pages';
+import { Home, Portfolio, Info } from './pages';
 import { Header } from './components/components';
-import { Francesco } from './pages/projects';
 
 function useRouter() {
 	return useContext(__RouterContext);
@@ -30,9 +29,6 @@ function PageContent() {
 		<Switch>
 			<Route path="/" exact component={Home} />
 			<Route path="/portfolio" exact component={Portfolio} />
-			<Route path="/portfolio/mia" exact component={Mia} />
-			<Route path="/portfolio/nicola" exact component={Nicola} />
-			<Route path="/portfolio/francesco" exact component={Francesco} />
 			<Route path="/info" exact component={Info} />
 		</Switch>
 	);
@@ -41,12 +37,14 @@ function PageContent() {
 export default function App() {
 	return (
 		<Router>
-			<ScrollToTop>
-				<Header />
-				<div style={{ overflow: 'hidden' }}>
-					<PageContent />
-				</div>
-			</ScrollToTop>
+			<SimpleReactLightbox>
+				<ScrollToTop>
+					<Header />
+					<div style={{ overflow: 'hidden' }}>
+						<PageContent />
+					</div>
+				</ScrollToTop>
+			</SimpleReactLightbox>
 		</Router>
 	);
 }
