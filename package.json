@@ -12,7 +12,7 @@
 		"emotion": "^10.0.27",
 		"fibers": "^5.0.0",
 		"jquery": "^3.5.1",
-		"node-sass": "^4.14.1",
+		"node-sass": "^7.0.0",
 		"normalize.css": "^8.0.1",
 		"react": "^16.13.1",
 		"react-awesome-slider": "^4.1.0",
